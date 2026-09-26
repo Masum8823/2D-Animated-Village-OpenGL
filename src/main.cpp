@@ -1,4 +1,26 @@
 #include <GL/glut.h>
+#include <math.h>
+
+// Draw a circle using polygon approximation
+void drawCircle(float cx, float cy, float radius)
+{
+glBegin(GL_POLYGON);
+
+```
+for (int i = 0; i < 360; i++)
+{
+    float angle = i * 3.14159f / 180.0f;
+
+    glVertex2f(
+        cx + radius * cos(angle),
+        cy + radius * sin(angle)
+    );
+}
+
+glEnd();
+```
+
+}
 
 // Initialize OpenGL settings
 void init()
@@ -47,11 +69,14 @@ glVertex2f(1000, 250);
 glVertex2f(0, 250);
 glEnd();
 
+// Sun
+glColor3f(1.0f, 1.0f, 0.0f);
+drawCircle(900, 900, 50);
+
 glutSwapBuffers();
 ```
 
 }
-
 
 // Main function
 int main(int argc, char** argv)
