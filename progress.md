@@ -13,10 +13,10 @@ This file records the development progress of the 2D Animated Village OpenGL pro
 
 ### Phase 02 — OpenGL Initialization
 
-* [ ] Added OpenGL/GLUT headers
-* [ ] Added window initialization
-* [ ] Added orthographic 2D projection
-* [ ] Added OpenGL display configuration
+* [x] Added OpenGL/GLUT headers
+* [x] Added window initialization
+* [x] Added orthographic 2D projection
+* [x] Added OpenGL display configuration
 
 ### Phase 03 — Village Environment
 
