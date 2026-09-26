@@ -1,0 +1,39 @@
+# Compiled files
+
+*.exe
+*.out
+*.o
+*.obj
+
+# Code::Blocks generated files
+
+*.layout
+*.depend
+bin/
+obj/
+
+# Visual Studio files
+
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build folders
+
+build/
+Debug/
+Release/
+
+# Temporary files
+
+*.tmp
+*.temp
+*.log
+
+# OS generated files
+
+.DS_Store
+Thumbs.db
+desktop.ini
