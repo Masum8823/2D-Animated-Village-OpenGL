@@ -64,8 +64,8 @@ This file records the development progress of the 2D Animated Village OpenGL pro
 
 ### Phase 10 — Keyboard Interaction
 
-* [ ] Added house movement controls
-* [ ] Added house scaling controls
+* [x] Added house movement controls
+* [x] Added house scaling controls
 * [ ] Added windmill rotation control
 
 ### Phase 11 — Animation

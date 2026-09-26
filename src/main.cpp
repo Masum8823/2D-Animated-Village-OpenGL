@@ -4,6 +4,7 @@
 float houseScale = 1.0f;
 float houseX = 0.0f;
 float houseY = 0.0f;
+float fanAngle = 0.0f;
 
 // Draw a circle using polygon approximation
 void drawCircle(float cx, float cy, float radius)
@@ -287,6 +288,34 @@ glutSwapBuffers();
 
 }
 
+// Handle keyboard input
+void keyboard(unsigned char key, int x, int y)
+{
+if (key == 'q' || key == 'Q')
+houseX += 10.0f;
+
+```
+if (key == 'w' || key == 'W')
+    houseX -= 10.0f;
+
+if (key == 'r' || key == 'R')
+    houseY += 10.0f;
+
+if (key == 't' || key == 'T')
+    houseY -= 10.0f;
+
+if (key == 's' || key == 'S')
+    houseScale *= 2.0f;
+
+if (key == 'a' || key == 'A')
+    houseScale /= 2.0f;
+
+glutPostRedisplay();
+```
+
+}
+
+
 // Main function
 int main(int argc, char** argv)
 {
@@ -301,6 +330,7 @@ glutCreateWindow("2D Animated Village Scene");
 init();
 
 glutDisplayFunc(display);
+glutKeyboardFunc(keyboard);
 
 glutMainLoop();
 
