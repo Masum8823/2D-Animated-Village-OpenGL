@@ -27,15 +27,15 @@ This file records the development progress of the 2D Animated Village OpenGL pro
 
 ### Phase 04 — Village House
 
-* [ ] Added house base
-* [ ] Added roof
-* [ ] Added door
-* [ ] Added house drawing function
+* [x] Added house base
+* [x] Added roof
+* [x] Added door
+* [x] Added house drawing function
 
 ### Phase 05 — Windmill
 
-* [ ] Added windmill stand
-* [ ] Added windmill blades
+* [x] Added windmill stand
+* [x] Added windmill blades
 * [ ] Added rotation transformation
 
 ### Phase 06 — Car

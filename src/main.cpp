@@ -58,6 +58,44 @@ glEnd();
 
 }
 
+// Draw the windmill
+void drawWindmill()
+{
+// Stand
+glColor3f(0.5f, 0.5f, 0.5f);
+
+```
+glBegin(GL_QUADS);
+glVertex2f(200, 300);
+glVertex2f(220, 300);
+glVertex2f(220, 550);
+glVertex2f(200, 550);
+glEnd();
+
+// Blades
+glPushMatrix();
+
+glTranslatef(210, 550, 0);
+
+glColor3f(1.0f, 1.0f, 1.0f);
+
+for (int i = 0; i < 4; i++)
+{
+    glRotatef(90, 0, 0, 1);
+
+    glBegin(GL_TRIANGLES);
+    glVertex2f(0, 0);
+    glVertex2f(-20, 100);
+    glVertex2f(20, 100);
+    glEnd();
+}
+
+glPopMatrix();
+```
+
+}
+
+
 
 // Initialize OpenGL settings
 void init()
@@ -112,6 +150,9 @@ drawCircle(900, 900, 50);
 
 // House
 drawHouse();
+
+// Windmill
+drawWindmill();
 
 glutSwapBuffers();
 ```
