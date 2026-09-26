@@ -20,10 +20,10 @@ This file records the development progress of the 2D Animated Village OpenGL pro
 
 ### Phase 03 — Village Environment
 
-* [ ] Added sky
-* [ ] Added grass
-* [ ] Added road
-* [ ] Added sun
+* [x] Added sky
+* [x] Added grass
+* [x] Added road
+* [x] Added sun
 
 ### Phase 04 — Village House
 
