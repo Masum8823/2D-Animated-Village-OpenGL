@@ -188,6 +188,14 @@ drawWindmill();
 // Car
 drawCar();
 
+// Clouds
+glColor3f(1.0f, 1.0f, 1.0f);
+
+drawCircle(150, 850, 40);
+drawCircle(200, 850, 50);
+drawCircle(250, 850, 40);
+
+
 glutSwapBuffers();
 ```
 

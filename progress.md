@@ -47,7 +47,7 @@ This file records the development progress of the 2D Animated Village OpenGL pro
 
 ### Phase 07 — Clouds
 
-* [ ] Added cloud shapes
+* [x] Added cloud shapes
 * [ ] Added cloud movement
 
 ### Phase 08 — Information Panel
