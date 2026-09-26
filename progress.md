@@ -70,10 +70,10 @@ This file records the development progress of the 2D Animated Village OpenGL pro
 
 ### Phase 11 — Animation
 
-* [ ] Added car animation
-* [ ] Added cloud animation
-* [ ] Added timer-based animation loop
-* [ ] Added object repositioning after leaving screen
+* [x] Added car animation
+* [x] Added cloud animation
+* [x] Added timer-based animation loop
+* [x] Added object repositioning after leaving screen
 
 ### Phase 12 — Finalization
 

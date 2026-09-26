@@ -6,6 +6,11 @@ float houseX = 0.0f;
 float houseY = 0.0f;
 float fanAngle = 0.0f;
 
+
+float carPos = -200.0f;
+float cloudPos = 0.0f;
+
+
 // Draw a circle using polygon approximation
 void drawCircle(float cx, float cy, float radius)
 {
@@ -94,6 +99,28 @@ drawText(40, 733, "41230301350");
 
 }
 
+// Update animated objects
+void update(int value)
+{
+// Car movement
+carPos += 5.0f;
+
+```
+if (carPos > 1000)
+    carPos = -300.0f;
+
+// Cloud movement
+cloudPos += 1.0f;
+
+if (cloudPos > 800)
+    cloudPos = -300.0f;
+
+glutPostRedisplay();
+
+glutTimerFunc(20, update, 0);
+```
+
+}
 
 // Draw the village house
 void drawHouse()
@@ -270,15 +297,29 @@ glPopMatrix();
 // Windmill
 drawWindmill();
 
-// Car
+// Animated Car
+glPushMatrix();
+
+glTranslatef(carPos, 0, 0);
+
 drawCar();
 
-// Clouds
+glPopMatrix();
+
+
+// Animated Clouds
+glPushMatrix();
+
+glTranslatef(cloudPos, 0, 0);
+
 glColor3f(1.0f, 1.0f, 1.0f);
 
 drawCircle(150, 850, 40);
 drawCircle(200, 850, 50);
 drawCircle(250, 850, 40);
+
+glPopMatrix();
+
 
 // Information Box
 drawInfoBox();
@@ -326,6 +367,8 @@ glutInit(&argc, argv);
 
 ```
 glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB);
+
+glutTimerFunc(0, update, 0);
 
 glutInitWindowSize(800, 600);
 glutCreateWindow("2D Animated Village Scene");
