@@ -77,7 +77,7 @@ This file records the development progress of the 2D Animated Village OpenGL pro
 
 ### Phase 12 — Finalization
 
-* [ ] Tested complete scene
-* [ ] Added screenshots
-* [ ] Updated documentation
-* [ ] Final project cleanup
+* [x] Tested complete scene
+* [x] Added screenshots
+* [x] Updated documentation
+* [x] Final project cleanup

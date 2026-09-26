@@ -8,6 +8,10 @@ This project presents a simple animated village scene containing a house, windmi
 
 The main purpose of the project is to demonstrate fundamental concepts of **2D Computer Graphics** using OpenGL.
 
+## Project Preview
+
+![2D Animated Village](assets/screenshots/2d-animated-village-scene.png)
+
 ## Features
 
 * 2D village environment
