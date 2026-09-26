@@ -1,6 +1,10 @@
 #include <GL/glut.h>
 #include <math.h>
 
+float houseScale = 1.0f;
+float houseX = 0.0f;
+float houseY = 0.0f;
+
 // Draw a circle using polygon approximation
 void drawCircle(float cx, float cy, float radius)
 {
@@ -247,8 +251,20 @@ glEnd();
 glColor3f(1.0f, 1.0f, 0.0f);
 drawCircle(900, 900, 50);
 
-// House
+// House Transformation
+glPushMatrix();
+
+glTranslatef(houseX, houseY, 0);
+glTranslatef(700, 300, 0);
+
+glScalef(houseScale, houseScale, 1.0f);
+
+glTranslatef(-700, -300, 0);
+
 drawHouse();
+
+glPopMatrix();
+
 
 // Windmill
 drawWindmill();

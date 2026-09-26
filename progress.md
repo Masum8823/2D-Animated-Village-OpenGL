@@ -58,8 +58,8 @@ This file records the development progress of the 2D Animated Village OpenGL pro
 
 ### Phase 09 — Transformations
 
-* [ ] Added house translation
-* [ ] Added house scaling
+* [x] Added house translation
+* [x] Added house scaling
 * [ ] Added windmill rotation
 
 ### Phase 10 — Keyboard Interaction
