@@ -22,6 +22,43 @@ glEnd();
 
 }
 
+// Draw the village house
+void drawHouse()
+{
+// House Base
+glColor3f(0.7f, 0.4f, 0.2f);
+
+```
+glBegin(GL_QUADS);
+glVertex2f(600, 300);
+glVertex2f(800, 300);
+glVertex2f(800, 500);
+glVertex2f(600, 500);
+glEnd();
+
+// Roof
+glColor3f(0.9f, 0.1f, 0.1f);
+
+glBegin(GL_TRIANGLES);
+glVertex2f(580, 500);
+glVertex2f(820, 500);
+glVertex2f(700, 650);
+glEnd();
+
+// Door
+glColor3f(0.2f, 0.1f, 0.0f);
+
+glBegin(GL_QUADS);
+glVertex2f(670, 300);
+glVertex2f(730, 300);
+glVertex2f(730, 420);
+glVertex2f(670, 420);
+glEnd();
+```
+
+}
+
+
 // Initialize OpenGL settings
 void init()
 {
@@ -72,6 +109,9 @@ glEnd();
 // Sun
 glColor3f(1.0f, 1.0f, 0.0f);
 drawCircle(900, 900, 50);
+
+// House
+drawHouse();
 
 glutSwapBuffers();
 ```
