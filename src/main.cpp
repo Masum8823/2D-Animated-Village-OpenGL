@@ -22,6 +22,74 @@ glEnd();
 
 }
 
+// Draw text on the screen
+void drawText(float x, float y, const char* text)
+{
+glRasterPos2f(x, y);
+
+```
+for (int i = 0; text[i] != '\0'; i++)
+{
+    glutBitmapCharacter(GLUT_BITMAP_HELVETICA_12, text[i]);
+}
+```
+
+}
+
+// Draw information box
+void drawInfoBox()
+{
+// Box
+glColor3f(0.10f, 0.12f, 0.16f);
+
+```
+glBegin(GL_QUADS);
+glVertex2f(20, 700);
+glVertex2f(330, 700);
+glVertex2f(330, 970);
+glVertex2f(20, 970);
+glEnd();
+
+// Border
+glColor3f(0.8f, 0.8f, 0.8f);
+
+glLineWidth(2.0f);
+
+glBegin(GL_LINE_LOOP);
+glVertex2f(20, 700);
+glVertex2f(330, 700);
+glVertex2f(330, 970);
+glVertex2f(20, 970);
+glEnd();
+
+// Project title
+glColor3f(1.0f, 0.85f, 0.2f);
+drawText(40, 940, "2D ANIMATED VILLAGE");
+
+// Controls heading
+glColor3f(0.3f, 0.8f, 1.0f);
+drawText(40, 910, "CONTROLS");
+
+// Controls
+glColor3f(1.0f, 1.0f, 1.0f);
+drawText(40, 885, "Q/W - House Left/Right");
+drawText(40, 862, "R/T - House Up/Down");
+drawText(40, 839, "S/A - House Scale");
+drawText(40, 816, "Y - Windmill Rotate");
+
+// Group Members heading
+glColor3f(0.3f, 0.8f, 1.0f);
+drawText(40, 780, "GROUP MEMBERS");
+
+// Group Members
+glColor3f(1.0f, 1.0f, 1.0f);
+drawText(40, 755, "41230301349");
+drawText(40, 733, "41230301350");
+```
+
+}
+
+
 // Draw the village house
 void drawHouse()
 {
@@ -195,6 +263,8 @@ drawCircle(150, 850, 40);
 drawCircle(200, 850, 50);
 drawCircle(250, 850, 40);
 
+// Information Box
+drawInfoBox();
 
 glutSwapBuffers();
 ```

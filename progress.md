@@ -52,9 +52,9 @@ This file records the development progress of the 2D Animated Village OpenGL pro
 
 ### Phase 08 — Information Panel
 
-* [ ] Added text rendering
-* [ ] Added control information box
-* [ ] Added group member information
+* [x] Added text rendering
+* [x] Added control information box
+* [x] Added group member information
 
 ### Phase 09 — Transformations
 
