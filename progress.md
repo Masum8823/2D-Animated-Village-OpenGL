@@ -40,10 +40,10 @@ This file records the development progress of the 2D Animated Village OpenGL pro
 
 ### Phase 06 — Car
 
-* [ ] Added car body
-* [ ] Added car top
-* [ ] Added wheels
-* [ ] Added circle drawing function
+* [x] Added car body
+* [x] Added car top
+* [x] Added wheels
+* [x] Added circle drawing function
 
 ### Phase 07 — Clouds
 
