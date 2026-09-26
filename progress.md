@@ -36,7 +36,7 @@ This file records the development progress of the 2D Animated Village OpenGL pro
 
 * [x] Added windmill stand
 * [x] Added windmill blades
-* [ ] Added rotation transformation
+* [x] Added rotation transformation
 
 ### Phase 06 — Car
 
@@ -60,13 +60,13 @@ This file records the development progress of the 2D Animated Village OpenGL pro
 
 * [x] Added house translation
 * [x] Added house scaling
-* [ ] Added windmill rotation
+* [x] Added windmill rotation
 
 ### Phase 10 — Keyboard Interaction
 
 * [x] Added house movement controls
 * [x] Added house scaling controls
-* [ ] Added windmill rotation control
+* [x] Added windmill rotation control
 
 ### Phase 11 — Animation
 

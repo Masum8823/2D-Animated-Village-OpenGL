@@ -310,6 +310,9 @@ if (key == 's' || key == 'S')
 if (key == 'a' || key == 'A')
     houseScale /= 2.0f;
 
+if (key == 'y' || key == 'Y') 
+    fanAngle -= 10.0f;
+
 glutPostRedisplay();
 ```
 
